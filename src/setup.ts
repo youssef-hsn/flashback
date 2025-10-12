@@ -1,6 +1,6 @@
 import { showToast, Toast, environment } from "@raycast/api";
 import { getConnection, closeConnection, testConnection } from "./utils/pg-connect";
-import { runMigrations, getAppliedMigrations } from "./utils/pg-migrate";
+import { runMigrations, getAppliedMigrations } from "./db/pg-migrate";
 import { writeFileSync } from "fs";
 import { join } from "path";
 
