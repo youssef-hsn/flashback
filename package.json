@@ -15,6 +15,13 @@
   "license": "MIT",
   "commands": [
     {
+      "name": "capture",
+      "title": "Capture Snapshot",
+      "subtitle": "Flashback",
+      "description": "Create a new snapshot to record what you're working on",
+      "mode": "view"
+    },
+    {
       "name": "setup",
       "title": "Setup Database",
       "subtitle": "Flashback",
