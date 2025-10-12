@@ -15,21 +15,62 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "capture",
-      "title": "capture",
-      "description": "capture a new note to your timeline",
-      "mode": "view"
+      "name": "setup",
+      "title": "Setup Database",
+      "subtitle": "Flashback",
+      "description": "Run database migrations on the database specified in preferences",
+      "mode": "no-view",
+      "disabledByDefault": false
+    }
+  ],
+  "preferences": [
+    {
+      "name": "dbHost",
+      "type": "textfield",
+      "required": false,
+      "title": "Database Host",
+      "description": "PostgreSQL database host",
+      "default": "localhost",
+      "placeholder": "localhost"
     },
     {
-      "name": "timeline",
-      "title": "timeline",
-      "description": "shows you your time line to edit add or delete nodes from the time",
-      "mode": "no-view"
+      "name": "dbPort",
+      "type": "textfield",
+      "required": false,
+      "title": "Database Port",
+      "description": "PostgreSQL database port",
+      "default": "5432",
+      "placeholder": "5432"
+    },
+    {
+      "name": "dbName",
+      "type": "textfield",
+      "required": true,
+      "title": "Database Name",
+      "description": "PostgreSQL database name",
+      "placeholder": "flashback"
+    },
+    {
+      "name": "dbUser",
+      "type": "textfield",
+      "required": true,
+      "title": "Database User",
+      "description": "PostgreSQL database username",
+      "placeholder": "postgres"
+    },
+    {
+      "name": "dbPassword",
+      "type": "password",
+      "required": true,
+      "title": "Database Password",
+      "description": "PostgreSQL database password"
     }
   ],
   "dependencies": {
     "@raycast/api": "^1.103.2",
-    "@raycast/utils": "^1.17.0"
+    "@raycast/utils": "^1.17.0",
+    "postgres": "^3.4.7",
+    "sql.js": "^1.12.0"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^2.0.4",
