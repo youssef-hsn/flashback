@@ -17,7 +17,6 @@ export class CreateSnapshotsMigration extends BaseMigration {
         anchor_date TIMESTAMPTZ NOT NULL,
         created_at TIMESTAMPTZ DEFAULT NOW(),
         updated_at TIMESTAMPTZ DEFAULT NOW(),
-        tags TEXT[] DEFAULT '{}',
         metadata JSONB DEFAULT '{}'::jsonb
       )
     `;
