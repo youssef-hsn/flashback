@@ -1,5 +1,5 @@
 import type postgres from "postgres";
-import { BaseMigration } from "../types/migration";
+import { BaseMigration } from "../../types/migration";
 
 /**
  * Migration 002: Create full-text search capability

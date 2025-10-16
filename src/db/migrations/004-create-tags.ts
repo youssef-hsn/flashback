@@ -1,5 +1,5 @@
 import type postgres from "postgres";
-import { BaseMigration } from "../types/migration";
+import { BaseMigration } from "../../types/migration";
 
 /**
  * Migration 004: Create tags table with many-to-many relationship to snapshots

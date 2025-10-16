@@ -1,5 +1,5 @@
 import type postgres from "postgres";
-import { BaseMigration } from "../types/migration";
+import { BaseMigration } from "../../types/migration";
 
 /**
  * Migration 001: Create the snapshots (notes) table with anchor dates

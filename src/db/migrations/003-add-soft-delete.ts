@@ -1,5 +1,5 @@
 import type postgres from "postgres";
-import { BaseMigration } from "../types/migration";
+import { BaseMigration } from "../../types/migration";
 
 /**
  * Migration 003: Add deleted_at for soft deletes
